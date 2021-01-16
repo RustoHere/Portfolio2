@@ -1,0 +1,110 @@
+.lightbox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: zoom-out;
+    padding: 30px;
+}
+.lightbox.open{
+    display: -ms-flexbox;
+    display: flex;
+}
+.lightbox-content img {
+    width: auto;
+    height: auto;
+    max-height: 450px;
+    max-width: 100%;
+    cursor: pointer;
+    display: block;
+    padding: 30px 0;
+} 
+.lightbox-content{
+    position: relative;
+}
+.lightbox.open .lightbox-content{
+    animation: lightboxImage .5s ease;
+}
+@-webkit-keyframes lightboxImage{
+    0%{
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes lightboxImage{
+    0%{
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+.lightbox-caption{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.lightbox-close{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: -40px;
+    right: 0;
+    font-size: 35px;
+    text-align: right;
+    color: #ffffff;
+    line-height: 40px;
+}
+.prev-item{
+    left: 50px;
+}
+.next-item{
+    right: 50px;
+}
+.prev-item:active,
+.next-item:active{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.prev-item,
+.next-item{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    margin-top: -20px;
+    z-index: 110;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.prev-item .fa,
+.next-item .fa{
+    font-size: 32px;
+    line-height: 40px;
+}

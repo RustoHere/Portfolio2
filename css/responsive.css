@@ -1,0 +1,68 @@
+@media(max-width: 1199px){
+    .main-content .section .container{
+        padding-top: 70px;
+    }
+    .main-container .aside .nav-toggler{
+        display: -ms-flexbox;
+        display: flex;
+        left: 30px;
+    }
+    .main-container .aside .nav-toggler.open{
+        left: 200px;
+    }
+    .main-container .aside.open{
+        left: 0;
+    }
+    .main-container .aside{
+        left: -270px;
+    }
+    .main-content .section.open{
+        left: 270px;
+    }
+    .main-content .section{
+        left: 0;
+    }
+    /*.main-content{
+        padding-left: 0;
+    }*/
+    .about .about-content .personal-info .info-item p span{
+        display: block;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 991px){
+    .container .row .blog-item,
+    .container .row .portfolio-item,
+    .container .row .service-item{
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 767px){
+    .row .contact-form .row .col-6,
+    .container .row .blog-item,
+    .container .row .service-item,
+    .row .experience,
+    .row .education,
+    .row .about-content .row .skills,
+    .row .about-content .row .personal-info{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .container .row .portfolio-filter button{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 575px){
+    .container .row .contact-info-item,
+    .container .row .portfolio-item{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
