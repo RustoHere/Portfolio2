@@ -38,6 +38,18 @@
 
 }
 
+.text .strong{
+    font-size: 1.5rem;
+    width:100%;
+    text-align: center;
+    color: #111;
+    line-height: 50px;
+}
+
+.text .strong span{
+    color: #ec1839;
+}
+
 .home .intro .social-link a{
     width: 35px;
     height: 35px;
@@ -116,5 +128,13 @@
     100%{
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
+    }
+}
+
+
+@media(max-width:520px){
+    .text strong{
+        font-size: 1.2rem;
+        line-height: 30px;
     }
 }

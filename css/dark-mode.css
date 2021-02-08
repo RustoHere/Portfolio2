@@ -21,6 +21,7 @@ body.dark .about .about-content .personal-info p,
 body.dark .about .about-content .about-text h3,
 body.dark .section-title h2,
 body.dark .home .intro h1,
+body.dark .home .intro .text .strong,
 body.dark .aside .logo a,
 body.dark .aside .nav li a{
     color: #ffffff;
